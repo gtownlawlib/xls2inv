@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Procurement Card log converter</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.7.20.min.js"></script>
+    <script src="./app.js"></script>
+    <script>
+       function getHtml(template) {
+          return template.join('\n');
+       }
+       listINVs();
+    </script>
+  </head>
+  <body>
+    <h1>Procurement Card log converter</h1>
+    <div id="app"></div>
+  </body>
+</html>
