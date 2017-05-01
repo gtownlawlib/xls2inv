@@ -130,7 +130,7 @@ On the "AWS Policy Generator" page, select "S3 Bucket Policy" in the policy type
 In the "Add Statements" section of the page, enter the following settings:
 
 Effect: Allow
-Principal: *
+Principal: \*
 Actions: "GetObject" and "PutObject"
 ARN: arn:aws:s3:::BUCKET_NAME (substituting your backend bucket's name for 'BUCKET_NAME')
 
@@ -139,7 +139,7 @@ Then click the "Add Statement" button.
 Before generating your policy, go back to the "Add Statements" section and enter the following settings:
 
 Effect: Allow
-Principal: *
+Principal: \*
 Actions: "ListBucket"
 ARN: arn:aws:s3:::BUCKET_NAME (substituting your backend bucket's name for 'BUCKET_NAME')
 
