@@ -196,7 +196,7 @@ To make it available for users, upload it to the root of your frontend S3 bucket
 Data must appear in the following column order:
 1. ORDER DATE
 1. ORDER NUMBER
-1. # OF COPY
+1. \# OF COPY
 1. PRICE($)
 1. S/H CHARGE &/OR SALES TAX (%)
 1. TOTAL COST ($)
