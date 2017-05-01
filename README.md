@@ -40,9 +40,18 @@ In the Permissions tab of your bucket, click the "CORS configuration" button and
 ```
 
 ##### 2. Create Lambda Package #####
-Compress the xls2inv.py script into a .zip archive also containing the contents of your virtual environment's site-packages folder (including openpyxl) by running the following commands:
+A Python package for deployment to AWS Lambda must include any add-on libraries utilized in the application. For xls2inv, that means boto3 (AWS's SDK library for Python) and openpyxl (the Excel parsing library). To include these, create a Python virtual environment on your local machine and install the necessary libraries within it:
 ```bash
-cd path/to/site-packages
+virtualenv -p python2.7 xls2inv_env
+cd xls2inv_env
+source bin/activate
+pip install boto3
+pip install openpyxl
+```
+
+With the libraries ready, you can compress the xls2inv.py script into a .zip archive along with the contents of your virtual environment's site-packages folder (which now includes boto3 and openpyxl):
+```bash
+cd path/to/xls2inv_env/lib/python2.7/site-packages
 zip -r9 ~/xls2inv.zip *
 cd path/to/xls2inv.py
 zip -g ~/xls2inv.zip xls2inv.py
@@ -200,7 +209,7 @@ Data must appear in the following column order:
 1. PRICE($)
 1. S/H CHARGE &/OR SALES TAX (%)
 1. TOTAL COST ($)
-1. STAFF CODE (row 2 only; select field; max. 7 characters)
+1. STAFF CODE (row 2 only; used to generate a header invoice number; only first 7 characters used)
 
 ### Who do I contact for assistance? ###
 
