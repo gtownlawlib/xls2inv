@@ -11,7 +11,6 @@ The Python script is designed to run on AWS Lambda. The JavaScript front end can
 * [boto3 Python library](https://boto3.readthedocs.io)
 * [AWS S3](https://aws.amazon.com/s3/) bucket (for Excel/INV files)
 * [AWS Lambda](https://aws.amazon.com/lambda/)
-* A spreadsheet in .xlsx format, based on template
 
 #### Frontend ####
 * [AWS IAM](https://aws.amazon.com/iam/) identity pool/[AWS Cognito](https://aws.amazon.com/cognito/) role w/backend S3 bucket LIST/PUT/GET permissions
@@ -40,7 +39,7 @@ In the Permissions tab of your bucket, click the "CORS configuration" button and
 </CORSConfiguration>
 ```
 
-##### 2.Create Lambda Package #####
+##### 2. Create Lambda Package #####
 Compress the xls2inv.py script into a .zip archive also containing the contents of your virtual environment's site-packages folder (including openpyxl) by running the following commands:
 ```bash
 cd path/to/site-packages
