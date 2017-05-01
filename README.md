@@ -1,6 +1,6 @@
 # xls2inv #
 
-xls2inv is a "serverless" Python function and JavaScript front end that parses credit card order logs in Excel format and converts them to .inv format, a plain text file format used by Sierra ILS to batch upload serials invoices.
+xls2inv is a "serverless" Python function and JavaScript front end that parses credit card order logs in Excel format and converts them to [.inv format](http://vendordocs.iii.com/#serials_elec_invoicing.html), a plain text file format used by Sierra ILS to batch upload serials invoices.
 
 The Python script is designed to run on AWS Lambda. The JavaScript front end can be deployed from an AWS S3 bucket configured to host a static website.
 
