@@ -8,6 +8,7 @@ The Python script is designed to run on AWS Lambda. The JavaScript front end can
 
 #### Backend ####
 * [openpyxl Python library](http://openpyxl.readthedocs.io)
+* [boto3 Python library](https://boto3.readthedocs.io)
 * [AWS S3](https://aws.amazon.com/s3/) bucket (for Excel/INV files)
 * [AWS Lambda](https://aws.amazon.com/lambda/)
 * A spreadsheet in .xlsx format, based on template
