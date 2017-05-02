@@ -15,6 +15,8 @@ The Python script is designed to run on AWS Lambda. The JavaScript front end can
 #### Frontend ####
 * [AWS IAM](https://aws.amazon.com/iam/) identity pool/[AWS Cognito](https://aws.amazon.com/cognito/) role w/backend S3 bucket LIST/PUT/GET permissions
 * [AWS SDK for JavaScript](https://aws.amazon.com/sdk-for-browser/)
+* [AWS S3](https://aws.amazon.com/s3/) bucket (for frontend files)
+
 
 ### How do I deploy this application? ###
 
