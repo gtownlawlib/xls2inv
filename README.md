@@ -200,7 +200,7 @@ To make it available for users, upload it to the root of your frontend S3 bucket
 * In first row of last column, select procurement card user code for appropriate staff member.
 * Refunds/rebates and other negative dollar values must be preceded by a negative sign.
 * All monetary values must be in U.S. dollars.
-* Only the first 29 characters of the "notes" column will be converted.
+* Only the first 29 characters of the "NOTE" column will be used.
 
 Data must appear in the following column order:
 1. ORDER DATE
@@ -209,6 +209,7 @@ Data must appear in the following column order:
 1. PRICE($)
 1. S/H CHARGE &/OR SALES TAX (%)
 1. TOTAL COST ($)
+1. NOTE
 1. STAFF CODE (row 2 only; used to generate a header invoice number; only first 7 characters used)
 
 ### Who do I contact for assistance? ###
